@@ -23,15 +23,15 @@
         <section class="encoder__content">
             <form>            
                 <div class="encoder">
-                    <textarea class="encoder__input" name="iput-text" placeholder="Ingrese texto aqui..."></textarea>
+                    <textarea class="encoder__input" id="input--text" name="input--text" placeholder="Ingrese texto aqui..."></textarea>
                     <label>
                         <box-icon  class="box-icon" name='error-circle' type='solid' color='#495057' size="1rem" ></box-icon>
                         Solo letras minusculas, sin acentos
                     </label>
                 </div>
-                <div class="encoder__button--container">
-                    <button class="encoder__button encoder__button--encriptar" type="button">Encriptar</button>
-                    <button class="encoder__button" type="button">Desencriptar</button>
+                <div class="encoder__btn--container">
+                    <button class="encoder__btn encoder__btn--encriptar" id="btn--encoder" type="button">Encriptar</button>
+                    <button class="encoder__btn" id="btn--decoder" type="button">Desencriptar</button>
                 </div>
             </form>
         </section>
@@ -43,8 +43,9 @@
                 <p>Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
             <div class="decoder__content--decoderMessage" >
-                <textarea class="decoder__description" name="decoder"></textarea>
-                <input class="decoder__buttom" type="submit" value="Copiar">
+                <textarea class="decoder__description" id="message" name="decoder"></textarea>
+                <input class="decoder__btn" id="btn--copy" type="submit" value="Copiar">
+                <div id="copied--text"></div>
             </div>                
         </section>
 
@@ -53,6 +54,7 @@
     <footer>
         powered by <a href="mailto:baranda.gustavo@gmail.com">Gustavo Baranda</a>
     </footer>
-
+    
+    <script src="./Js/app.js" ></script>
 </body>
 </html>

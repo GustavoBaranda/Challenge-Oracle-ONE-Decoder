@@ -56,13 +56,13 @@ body {
     background: #EFF1FA;
 }
 
-.encoder__button--container{
+.encoder__btn--container{
     display: flex;
     justify-content: space-between;
     gap: 8px;
 }
 
-.encoder__button {
+.encoder__btn {
     width: 328px;
     color: #0A3871;
     font-size: 16px;
@@ -74,7 +74,7 @@ body {
     padding: 22px;
 }
 
-.encoder__button--encriptar {
+.encoder__btn--encriptar {
     background: #0A3871;
     color: #ffffff;
 }
@@ -129,7 +129,7 @@ body {
  
 
 .decoder__content--decoderMessage
-.decoder__buttom {
+.decoder__btn {
     width: 100%;
     color: #0A3871;
     font-size: 16px;
