@@ -5,37 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge ONE - Desafio encriptador</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
 </head>
-<body>
-    
-    <header>
+<body>    
+    <header class="header">
         <a>
             <img src="./assets/Vector.png" alt="Logo-Alura">
         </a>
-        <h1>
+        <!-- <h1>
             Encriptador Alura
-        </h1>
+        </h1> -->
     </header>
-    <main>
-        <section>
+    
+    <main class="container">
+        <section class="encoder__content">
             <form>            
-                <div>
-                    <textarea name="iput-text" placeholder="Ingrese texto aqui..."></textarea>
-                    <label>Solo letras minusculas, sin acentos</label>
+                <div class="encoder">
+                    <textarea class="encoder__input" name="iput-text" placeholder="Ingrese texto aqui..."></textarea>
+                    <label>
+                        <box-icon  class="box-icon" name='error-circle' type='solid' color='#495057' size="1rem" ></box-icon>
+                        Solo letras minusculas, sin acentos
+                    </label>
                 </div>
-                <div>
-                    <button type="button">Encriptar</button>
-                    <button type="button">Desencriptar</button>
+                <div class="encoder__button--container">
+                    <button class="encoder__button encoder__button--encriptar" type="button">Encriptar</button>
+                    <button class="encoder__button" type="button">Desencriptar</button>
                 </div>
             </form>
         </section>
         
-        <section>
-            <div>
-                <textarea name="description"></textarea>
-                <input type="submit" value="copiar">
+        <section class="decoder__content">
+            <div class="decoder__content--messageDefauld">
+                <img class="" src="./assets/Muñeco.png" alt="Muñeco" width="100%">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
+            <div class="decoder__content--decoderMessage" >
+                <textarea class="decoder__description" name="decoder"></textarea>
+                <input class="decoder__buttom" type="submit" value="Copiar">
+            </div>                
         </section>
 
     </main>
