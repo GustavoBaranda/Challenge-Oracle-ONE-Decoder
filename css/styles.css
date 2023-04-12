@@ -51,9 +51,20 @@ body {
 .encoder__input {
     width: 100%;
     resize: none;
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
     height: 671px;
     margin-bottom: 69px;
     background: #EFF1FA;
+}
+
+.encoder__input::placeholder {
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
 }
 
 .encoder__btn--container{
@@ -123,6 +134,10 @@ body {
 .decoder__description {
     width: 100%;
     resize: none;
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
     height: 761px;
     margin-bottom: 69px;
 }
