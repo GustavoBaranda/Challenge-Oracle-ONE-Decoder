@@ -235,12 +235,12 @@ footer {
 
 @media screen and (max-width: 450px){
     .encoder__content {
-        height: 650px;      
+        height: 660px;      
         padding: 0 10px 0 10px;
     }
 
     .encoder__input {
-        height: 450px;
+        height: 480px;
         margin: 0;
     }
 
