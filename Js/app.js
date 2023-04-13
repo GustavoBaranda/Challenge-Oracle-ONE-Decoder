@@ -3,6 +3,8 @@ const btnEncoder = document.getElementById('btn--encoder');
 const btnDecoder = document.getElementById('btn--decoder');
 const message = document.getElementById('message');
 const btnCopy = document.getElementById('btn--copy');
+const copy = document.getElementById('copied--text');
+
 let vowels = {
     'a' : 'ai',
     'e' : 'enter',
@@ -53,6 +55,23 @@ btnEncoder.addEventListener('click', validation);
 btnEncoder.addEventListener('click', encoder);
 btnDecoder.addEventListener('click', validation);
 btnDecoder.addEventListener('click', decoder);
+btnCopy.addEventListener('click', (e) => {
+    e.preventDefault();
+    message.select();
+    message.setSelectionRange(0, 99999);
+    setTimeout(() => {
+    navigator.clipboard.writeText(message.value)
+        .then(() => {
+             copy.textContent = "Se ha copiado exitosamente! 😉";
+             setTimeout(() => window.location.reload(), 1500)
+             
+            })
+            .catch(() => {
+                copy.textContent = "Algo salió mal! 😔";
+            });  
+        }, 1000)
+    navigator.reset();    
+});
 
 
 
