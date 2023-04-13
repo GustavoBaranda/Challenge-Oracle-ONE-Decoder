@@ -13,7 +13,6 @@
 body {
     font-family: inter; 
     background-color: #EFF1FA;
-    height: 100vh;
 }
 
 .header {
@@ -33,6 +32,7 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-around;
+    gap: 2%;
 }
 
 .encoder__content {
@@ -41,7 +41,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 800px;
-    height: 944px;
+    height: 900px;
 }
 
 .encoder {
@@ -55,7 +55,7 @@ body {
     font-size: 32px;
     font-weight: 400;
     line-height: 48px;
-    height: 671px;
+    height: 627px;
     margin-bottom: 69px;
     background: #EFF1FA;
 }
@@ -74,13 +74,14 @@ body {
 }
 
 .encoder__btn {
-    width: 328px;
+    width: 100%;
+    max-width: 328px;
     color: #0A3871;
     font-size: 16px;
     font-weight: 400;
     line-height: 19.36px;
     border: 2px solid #0A3871;
-    background: #fff;
+    background: #EFF1FA;
     border-radius: 32px;
     padding: 22px;
     cursor: pointer;
@@ -96,7 +97,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 400px;
-    height: 944px;
+    height: 900px;
     background-color: #ffffff;
     border-radius: 32px;
 }
@@ -130,7 +131,6 @@ body {
     display: none;
 }
 
-.decoder__content--decoderMessage
 .decoder__description {
     width: 100%;
     resize: none;
@@ -138,14 +138,13 @@ body {
     font-size: 32px;
     font-weight: 400;
     line-height: 48px;
-    height: 761px;
+    height: 717px;
     margin-bottom: 69px;
 }
- 
 
-.decoder__content--decoderMessage
 .decoder__btn {
     width: 100%;
+    max-width: 328px;
     color: #0A3871;
     font-size: 16px;
     font-weight: 400;
@@ -159,6 +158,80 @@ body {
 
 footer {
     text-align: center;
-    padding: 50px 0 20px 0;
+    height: 10vh;
+    margin: 50px 0 20px 0;
 
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        width: 100%;
+        max-width: 768px;
+        justify-content: center;
+        display: block;
+        margin: 0;
+        padding: 150px 20px 0 20px;
+        gap: 0;
+    }
+
+    .encoder__content {
+        display: block;
+        width: 100%;
+        max-width: 768px;
+        height: 830px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .encoder__btn {
+        width: 100%;
+        max-width: 768px;
+        margin-bottom: 20px;
+    }
+
+    .decoder__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 768px;
+        height: 500px;
+        background-color: #ffffff;
+        border-radius: 32px;
+    }
+
+    .decoder__content--messageDefauld {
+        width: 100%;
+    }
+
+    .decoder__content--messageDefauld img {
+        display: none;
+    }
+
+    .decoder__content--decoderMessage {
+        width: 100%;
+    }
+
+    .decoder__description {
+        height: 336px;
+    }
+
+    .decoder__btn {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .decoder__btn {
+        width: 100%;
+        max-width: 768px;
+        color: #0A3871;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        border: 2px solid #0A3871;
+        background: #fff;
+        border-radius: 32px;
+        padding: 22px;
+        cursor: pointer;
+    } 
 }
